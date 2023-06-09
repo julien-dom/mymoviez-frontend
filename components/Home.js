@@ -12,7 +12,7 @@ function Home() {
 
   // Hook d'effet au chargement
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviez-backend.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
       setMoviesApi(data.movies)});
